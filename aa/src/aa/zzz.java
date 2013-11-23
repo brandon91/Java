@@ -2,7 +2,7 @@ package aa;
 import javax.swing.*;
 /**
  * @author Zoubert hanem
- *Cette classe c'est un panel 
+ *Cette classe est un panel 
  */
 public class zzz extends JPanel {
 	
