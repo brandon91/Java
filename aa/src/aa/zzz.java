@@ -10,7 +10,7 @@ public class zzz extends JPanel {
 	 private Object[][] donnees;
 	 private JTable tableau;
 	 private JScrollPane scroll;
-	 private JLabel ListeVisiteur;
+	 private JLabel listeVisiteur;
 	/**
 	 * Constructeur
 	 */
