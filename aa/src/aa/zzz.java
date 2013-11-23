@@ -1,6 +1,10 @@
 package aa;
-
-public class zzz {
+import javax.swing.*;
+/**
+ * @author Zoubert hanem
+ *Cette classe c'est un panel 
+ */
+public class zzz extends JPanel {
 	
 	/**
 	 * Constructeur
