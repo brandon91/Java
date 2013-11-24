@@ -23,7 +23,7 @@ public class zzz extends JPanel {
 		entête du tableau
 		String[] entetes = { "Id", "Nom", "Prenom"};
 
-		//                              [Lignes]            [Colones]
+		//                              [Lignes]            [Colonnes]
 		this.donnees = new Object[Nombre de visiteur(s)][nombre d'entete(s)];
 		
 									[]       []
@@ -41,9 +41,9 @@ public class zzz extends JPanel {
 					String nomVisiteur = rs.getString("nom");
 					String prenomVisiteur = rs.getString("prenom");
 					
-					this.donnees[i][0] = id
-					this.donnees[i][1] = nomVisiteur
-					this.donnees[i][2] = prenomVisiteur
+					this.donnees[i][0] = id -> colonne 1
+					this.donnees[i][1] = nomVisiteur ->	colonne 2
+					this.donnees[i][2] = prenomVisiteur -> colonne 3
 				}
 			 }
 				catch(SQLException e){
