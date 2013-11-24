@@ -9,6 +9,7 @@ public class zzz extends JPanel {
 	
 	/**
 	 * Ce qu'il te faut pour le tableau
+	 * @author Zoubert hanem
 	 */
 	 private Object[][] donnees;
 	 private JTable tableau;
@@ -16,6 +17,7 @@ public class zzz extends JPanel {
 	 private JLabel listeVisiteur;
 	/**
 	 * Constructeur du panel
+	 * @author zoubert hanem
 	 */
 	public zzz(){
 		/*
@@ -31,12 +33,14 @@ public class zzz extends JPanel {
 		
 		Ajout du tableau dans un JscrollPane
 		this.scroll = new JScrollPane(tableau);
+		
+		Taille du scroll
 		this.scroll.setPreferredSize(new Dimension(450, 200));
 	
 				ResultSet rs = Modele.getLesVisiteurs();
 		 try{
 				while(rs.next()){
-				
+											
 					String id = rs.getString("id");
 					String nomVisiteur = rs.getString("nom");
 					String prenomVisiteur = rs.getString("prenom");
