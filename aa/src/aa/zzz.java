@@ -20,8 +20,7 @@ public class zzz extends JPanel {
 	 * @author zoubert hanem
 	 */
 	public zzz(){
-		/*
-		
+		/*	
 		entête du tableau
 		String[] entetes = { "Id", "Nom", "Prenom"};
 
@@ -36,24 +35,26 @@ public class zzz extends JPanel {
 		
 		Taille du scroll
 		this.scroll.setPreferredSize(new Dimension(450, 200));
-	
-				ResultSet rs = Modele.getLesVisiteurs();
-				int i =0;
-		 try{
-				while(rs.next()){
-					i++;				
-					String id = rs.getString("id");
-					String nomVisiteur = rs.getString("nom");
-					String prenomVisiteur = rs.getString("prenom");
-					
-					this.donnees[i][0] = id -> colonne 1
-					this.donnees[i][1] = nomVisiteur ->	colonne 2
-					this.donnees[i][2] = prenomVisiteur -> colonne 3
-				}
-			 }
-				catch(SQLException e){
-					System.out.println(e);
-				}
+		
+		Pour que cette boucle ce fasse il te faut une classe Visiteur qui sera crée dans le modéle qui aura 
+		comme attribut(id,nom,prenom) et qui prendra en parametre tout ces attributs ,et aussi une fonction
+		qui sera crée dans le modéle qui renvoie un Arraylist de Visiteur .Cette fonction permettera de recuperer les visiteurs
+		dans la base de donnée et les ajouter dans l'ArrayList.
+		Ensuite il te faut dans la classe Visiteur
+		pour chaque attribut l'accesseur get() uniquement l'accesseur get() ,tu n'auras
+		pas besoin du set() ;)
+		
+		for (int i = 0; i < Modele.lesVisiteurs().size(); i++) {
+		
+				Visiteur visiteur = Modele.lesVisiteurs().get(i);
+
+			    this.donnees[i][0] = visiteur.getId();
+				this.donnees[i][1] = visiteur.getNom();
+				this.donnees[i][2] = visiteur.getPrenom();
+			
+			}
+			//ajout du scroll dans le panel
+			this.add(this.scroll);
 		*/
 	}
 }
