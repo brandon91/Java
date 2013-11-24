@@ -7,23 +7,29 @@ import javax.swing.*;
  */
 public class zzz extends JPanel {
 	
+	/**
+	 * Ce qu'il te faut pour le tableau
+	 */
 	 private Object[][] donnees;
 	 private JTable tableau;
 	 private JScrollPane scroll;
 	 private JLabel listeVisiteur;
 	/**
-	 * Constructeur
+	 * Constructeur du panel
 	 */
 	public zzz(){
 		/*
 		
+		entête du tableau
 		String[] entetes = { "Id", "Nom", "Prenom"};
 
-		//                              [Lignes]       -    [Colones]
+		//                              [Lignes]            [Colones]
 		this.donnees = new Object[Nombre de visiteur(s)][nombre d'entete(s)];
 		
+									[]       []
 		this.tableau = new JTable(donnees, entetes);
 		
+		Ajout du tableau dans un JscrollPane
 		this.scroll = new JScrollPane(tableau);
 		this.scroll.setPreferredSize(new Dimension(450, 200));
 	
