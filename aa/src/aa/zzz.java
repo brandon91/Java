@@ -39,10 +39,8 @@ public class zzz extends JPanel {
 		Pour que cette boucle ce fasse il te faut une classe Visiteur qui sera crée dans le package Modéle qui aura 
 		comme attribut(id,nom,prenom) et qui prendra en parametre tout ces attributs ,et aussi une fonction
 		qui sera crée dans la classe modéle qui renvoie un Arraylist de Visiteur .Cette fonction permettera de recuperer les visiteurs
-		dans la base de donnée et les ajoutes dans l'ArrayList.
-		Ensuite il te faut dans la classe Visiteur
-		pour chaque attribut l'accesseur get() uniquement l'accesseur get() ,tu n'auras
-		pas besoin du set() ;)
+		dans la base de donnée et les ajoutes dans l'ArrayList.Ensuite il te faut dans la classe Visiteur
+		pour chaque attribut l'accesseur get() uniquement l'accesseur get() ,tu n'auras pas besoin du set() ;)
 		
 		for (int i = 0; i < Modele.lesVisiteurs().size(); i++) {
 		
