@@ -36,7 +36,7 @@ public class zzz extends JPanel {
 		Taille du scroll
 		this.scroll.setPreferredSize(new Dimension(450, 200));
 		
-		Pour que cette boucle ce fasse il te faut une classe Visiteur qui sera crée dans le modéle qui aura 
+		Pour que cette boucle ce fasse il te faut une classe Visiteur qui sera crée dans le package Modéle qui aura 
 		comme attribut(id,nom,prenom) et qui prendra en parametre tout ces attributs ,et aussi une fonction
 		qui sera crée dans le modéle qui renvoie un Arraylist de Visiteur .Cette fonction permettera de recuperer les visiteurs
 		dans la base de donnée et les ajouter dans l'ArrayList.
