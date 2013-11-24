@@ -38,9 +38,10 @@ public class zzz extends JPanel {
 		this.scroll.setPreferredSize(new Dimension(450, 200));
 	
 				ResultSet rs = Modele.getLesVisiteurs();
+				int i =0;
 		 try{
 				while(rs.next()){
-											
+					i++;				
 					String id = rs.getString("id");
 					String nomVisiteur = rs.getString("nom");
 					String prenomVisiteur = rs.getString("prenom");
