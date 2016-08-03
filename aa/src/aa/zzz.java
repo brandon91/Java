@@ -22,7 +22,7 @@ public class zzz extends JPanel {
 		//                              [Lignes]            [Colonnes]
 		this.donnees = new Object[Nombre de visiteur(s)][nombre d'entete(s)];
 		
-					     []       []
+		//			     []       []
 		this.tableau = new JTable(donnees, entetes);
 		
 		Ajout du tableau dans un JscrollPane
