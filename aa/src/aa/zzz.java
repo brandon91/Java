@@ -1,27 +1,22 @@
 package aa;
 import javax.swing.*;
 /**
+ * Class JPanel qui contient un tableau qui affiche
+ * l'id, le nom et prenom des visteurs
  * @author Zoubert hanem
- *Cette classe est un panel 
- * Test pull
  */
 public class zzz extends JPanel {
-	
-	/**
-	 * Ce qu'il te faut pour le tableau
-	 * @author Zoubert hanem
-	 */
+
 	 private Object[][] donnees;
 	 private JTable tableau;
 	 private JScrollPane scroll;
 	 private JLabel listeVisiteur;
 	/**
 	 * Constructeur du panel
-	 * @author zoubert hanem
 	 */
 	public zzz(){
-		/*	
-		entï¿½te du tableau
+			
+		entÃ¯Â¿Â½te du tableau
 		String[] entetes = { "Id", "Nom", "Prenom"};
 
 		//                              [Lignes]            [Colonnes]
@@ -36,23 +31,22 @@ public class zzz extends JPanel {
 		Taille du scroll
 		this.scroll.setPreferredSize(new Dimension(450, 200));
 		
-		Pour que cette boucle ce fasse il te faut une classe Visiteur qui sera crée dans le package Modéle qui aura 
-		comme attribut(id,nom,prenom) et qui prendra en parametre tout ces attributs ,et aussi une fonction
-		qui sera crée dans la classe modéle qui renvoie un Arraylist de Visiteur .Cette fonction permettera de recuperer les visiteurs
-		dans la base de donnée et les ajoutes dans l'ArrayList.Ensuite il te faut dans la classe Visiteur
-		pour chaque attribut l'accesseur get() uniquement l'accesseur get() ,tu n'auras pas besoin du set() ;)
+		/*Pour que cette boucle fonctionne il te faut tout d'abord une classe Visiteurs que tu vas crÃ©er dans le package Modele qui aura 
+		comme variable (id,nom,prenom) et qui prendra en parametre ces 3 variables dans son constructeur et une fonction 
+		( function Arraylist<Visiteurs> getLesVisteurs(); ) qui sera crÃ©Ã©e dans la classe modele.java qui va renvoyer tous les visiteurs qui sont dans la BDD sous forme d'un Arraylist.
+		Ensuite il te faut dans la classe Visiteur pour chaque variable l'accesseur get() uniquement l'accesseur get() ,tu n'auras pas besoin du set() ;)
+		*/
 		
 		for (int i = 0; i < Modele.lesVisiteurs().size(); i++) {
 		
-				Visiteur visiteur = Modele.lesVisiteurs().get(i);
+			Visiteur visiteur = Modele.lesVisiteurs().get(i);
 
-			    this.donnees[i][0] = visiteur.getId();
-				this.donnees[i][1] = visiteur.getNom();
-				this.donnees[i][2] = visiteur.getPrenom();
+			this.donnees[i][0] = visiteur.getId();
+			this.donnees[i][1] = visiteur.getNom();
+			this.donnees[i][2] = visiteur.getPrenom();
 			
-			}
+		}
 			//ajout du scroll dans le panel
 			this.add(this.scroll);
-		*/
 	}
 }
