@@ -18,9 +18,10 @@ public class zzz extends JPanel {
 			
 		//entï¿½te du tableau
 		String[] entetes = { "Id", "Nom", "Prenom"};
-
+		
+		/* Nombre de visiteur = Modele.lesVisiteurs().size() */
 		//                              [Lignes]            [Colonnes]
-		this.donnees = new Object[Nombre de visiteur(s)][nombre d'entete(s)];
+		this.donnees = new Object["Nombre de visiteur(s)"]["nombre d'entete(s)"];
 		
 		//			     []       []
 		this.tableau = new JTable(donnees, entetes);
