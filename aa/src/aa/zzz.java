@@ -16,7 +16,7 @@ public class zzz extends JPanel {
 	 */
 	public zzz(){
 			
-		entï¿½te du tableau
+		//entï¿½te du tableau
 		String[] entetes = { "Id", "Nom", "Prenom"};
 
 		//                              [Lignes]            [Colonnes]
@@ -25,10 +25,10 @@ public class zzz extends JPanel {
 		//			     []       []
 		this.tableau = new JTable(donnees, entetes);
 		
-		Ajout du tableau dans un JscrollPane
+		//Ajout du tableau dans un JscrollPane
 		this.scroll = new JScrollPane(tableau);
 		
-		Taille du scroll
+		//Taille du scroll
 		this.scroll.setPreferredSize(new Dimension(450, 200));
 		
 		/**
